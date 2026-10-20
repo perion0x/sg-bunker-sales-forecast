@@ -1,0 +1,9 @@
+forecast_month,data_through,item,forecast_kt,low_80,high_80,actual_kt,miss_kt,miss_pct,within_80_band
+2026-09,2026-08,Final forecast,4683,4364.0,5002.0,4726.0,-43.0,-0.91,yes
+2026-09,2026-08,Model ensemble,4700,,,4726.0,-26.0,-0.55,
+2026-09,2026-08,Seasonal naive x YoY (3m),4669,,,4726.0,-57.0,-1.21,
+2026-09,2026-08,Seasonal naive x YTD,4882,,,4726.0,156.0,3.3,
+2026-09,2026-08,Seasonal step ratio,4681,,,4726.0,-45.0,-0.95,
+2026-09,2026-08,SARIMA (log daily rate),4683,,,4726.0,-43.0,-0.91,
+2026-09,2026-08,Holt-Winters ETS,4650,,,4726.0,-76.0,-1.61,
+2026-09,2026-08,Bunker-call cross-check,4645,,,4726.0,-81.0,-1.71,

@@ -4,7 +4,18 @@ A next-month forecast of Singapore bunker sales, built from public MPA statistic
 It blends five time-series models, weighted by how accurate each was over the last
 36 months, with a cross-check based on vessel calls for bunkers.
 
-**September 2026 forecast: 4,683 kt** (80% range 4,364–5,002 kt), using data through August 2026.
+**October 2026 forecast: 4,806 kt** (80% range 4,479–5,133 kt), using data through September 2026.
+This run uses the five-model blend only. The bunker-call cross-check is skipped until MPA's September vessel-calls-by-purpose file is added to `data/`.
+
+## Track record
+
+Every forecast is logged here once the actual figure is published. Full detail, including each model, is in `data/forecast_track_record.csv`.
+
+| Month | Forecast (kt) | 80% range (kt) | Actual (kt) | Miss | Inside range? |
+|---|---|---|---|---|---|
+| Sep 2026 | 4,683 | 4,364–5,002 | 4,726 | -0.9% | Yes |
+
+September 2026: the actual of 4,726 kt (MPA, including delayed submissions) was 0.9% above the forecast. The model blend alone (4,700 kt) missed by 0.6%; the bunker-call cross-check (4,645 kt) was the furthest off at 1.7%. Bunker sales were down 1.0% year on year while vessel arrivals rose 5.6%.
 
 ## What's in this folder
 
@@ -12,7 +23,7 @@ It blends five time-series models, weighted by how accurate each was over the la
 |---|---|
 | `app.py` | Streamlit dashboard. Runs the model live and lets you upload newer MPA files |
 | `bunker_forecast.py` | The forecasting model. Also runs on its own from the command line |
-| `data/` | MPA source data: monthly bunker sales (total and by grade), vessel calls by purpose |
+| `data/` | MPA source data: monthly bunker sales (total and by grade), vessel calls by purpose, and `forecast_track_record.csv` (forecasts vs actuals) |
 | `tableau/bunker_forecast_tableau.xlsx` | Model results laid out for Tableau, one sheet per chart |
 | `requirements.txt` | Python packages |
 
